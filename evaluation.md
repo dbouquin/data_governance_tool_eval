@@ -84,41 +84,11 @@
 | CKAN | [LS](https://github.com/ckan/ckan/issues/4361)/[PS](https://www.datopian.com/showcase/case-studies/ubdc-data-portal-revamp-ckan-powered-secure-gdpr-compliant) | [PS](https://www.keitaro.com/insights/2023/08/07/streamlining-data-management-with-ckan-and-keycloak-integration/) | [NS](https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/998119544445508) | U | NS | [SSO](https://extensions.ckan.org/extension/saml2auth/), [Basic Auth (MFA via Keycloak)](https://www.keitaro.com/insights/2023/08/07/streamlining-data-management-with-ckan-and-keycloak-integration/), [Public key authentication](https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/998119544445508) | [CKANEXT-SECURITY](https://github.com/data-govt-nz/ckanext-security) |
 | Collibra Data Intelligence Platform | FS | FS | [Security compliances listed](https://www.collibra.com/company/trust-center#sub-menu-compliance) | [Authorized (Moderate)](https://www.collibra.com/resources/collibra-and-fedramp) | FS | [SSO](https://productresources.collibra.com/docs/collibra/latest/Content/Console/Infrastructure/DGCService/SecurityConfiguration/co_single-sign-on.htm), [LDAP](https://productresources.collibra.com/docs/collibra/latest/Content/Console/Infrastructure/DGCService/SecurityConfiguration/co_LDAP-configuration.htm), [SAML](https://productresources.collibra.com/docs/collibra/latest/Content/Console/Infrastructure/DGCService/SecurityConfiguration/SAML/co_about-saml.htm), [JSON Web Token](https://productresources.collibra.com/docs/collibra/latest/Content/Console/Infrastructure/DGCService/SecurityConfiguration/JWT/to_JWT-authentication.htm) | |
 | Databricks Unity Catalog | [FS](https://www.databricks.com/trust/compliance/gdpr) | [FS](https://docs.databricks.com/aws/en/security/privacy/hipaa) | [Security compliances listed](https://www.databricks.com/trust/compliance/iso-27001) | [Integrates with High and Moderate supported clouds (AWS and Azure)](https://www.databricks.com/trust/compliance/fedramp) | FS | [SSO, OAuth](https://docs.databricks.com/aws/en/security/auth) | |
-| DataHub | LS | LS | LS  | NS | U | [SSO, JaaS, Basic Auth, Access Tokens](https://datahubproject.io/docs/authentication) | Not explicitly compliant but can be used to achieve compliance with GDPR, HIPAA, ISO 27001 |
+| DataHub | LS | LS | U  | U | U | [SSO, JaaS, Basic Auth, Access Tokens](https://datahubproject.io/docs/authentication) | Not explicitly compliant but can be used to achieve compliance with GDPR, HIPAA, ISO 27001 |
 | dbt | FS | FS | [Security compliances listed](https://www.getdbt.com/security) | U | FS | [SSO and OAuth](https://docs.getdbt.com/docs/cloud/manage-access/sso-overview), [Authentication Tokens](https://docs.getdbt.com/docs/dbt-cloud-apis/authentication) | |
-| DKAN | LS | LS | LS | U | NS | [Basic Auth](https://dkan.readthedocs.io/en/7.x-1.x/admin/account_access_and_setup.html), [Access Tokens](https://dkan.readthedocs.io/en/7.x-1.x/apis/rest-api.html) | Not explicitly compliant but can be used to achieve compliance with GDPR, HIPAA, ISO 27001 |
+| DKAN | LS | LS | U | U | NS | [Basic Auth](https://dkan.readthedocs.io/en/7.x-1.x/admin/account_access_and_setup.html), [Access Tokens](https://dkan.readthedocs.io/en/7.x-1.x/apis/rest-api.html) | Not explicitly compliant but can be used to achieve compliance with GDPR, HIPAA, ISO 27001 |
 | Great Expectations | U | U | [SOC 2 Type II](https://trust.greatexpectations.io/) | U | FS | [SSH, Basic Auth](https://trust.greatexpectations.io/controls#infrastructure-security), [SSO (Enterprise), Access Tokens](https://docs.greatexpectations.io/docs/cloud/users/manage_users)| |
-| OpenMetadata | PS | PS |  | U | PS | [SSO](https://docs.open-metadata.org/latest/deployment/security), [Basic Auth](https://docs.open-metadata.org/latest/deployment/security/basic-auth), [LDAP](https://docs.open-metadata.org/latest/deployment/security/ldap), [SSL](https://docs.open-metadata.org/latest/deployment/security/enable-ssl), [JWT Tokens](https://docs.open-metadata.org/latest/deployment/security/enable-jwt-tokens) | |
-
-## Implementation & Support
-
-| Tool Name | Implementation Complexity | Community Support | Documentation Quality | Training Resources | Commercial Support Options | Active Development |
-|-----------|---------------------------|-------------------|------------------------|-------------------|---------------------------|-------------------|
-| Apache Atlas | High | PS | PS | LS | FS (Cloudera) | PS |
-| AWS Lake Formation/Glue | Medium | FS | FS | FS | FS (AWS) | FS |
-| CKAN | Medium | FS | PS | PS | PS (Various partners) | FS |
-| Collibra Data Intelligence Platform | Medium | PS | FS | FS | FS | FS |
-| Databricks Unity Catalog | Medium | FS | FS | FS | FS (Databricks) | FS |
-| DataHub | Medium-High | FS | FS | PS | FS (Acryl Data) | FS |
-| dbt | Low-Medium | FS | FS | FS | FS (dbt Labs) | FS |
-| DKAN | Medium | PS | PS | PS | PS (CivicActions) | PS |
-| Great Expectations | Low-Medium | FS | FS | FS | FS (GX Cloud) | FS |
-| OpenMetadata | Medium | FS | FS | PS | FS (Collate) | FS |
-
-## Cost & Resources
-
-| Tool Name | License Cost | Estimated Implementation Cost | Ongoing Maintenance Cost | Required Technical Expertise | Average Implementation Timeline |
-|-----------|--------------|-------------------------------|--------------------------|------------------------------|--------------------------------|
-| Apache Atlas | Free | High | Medium-High | High (Hadoop, Java) | 3-6 months |
-| AWS Lake Formation/Glue | Pay-per-use | Medium | Medium | Medium (AWS, SQL) | 2-4 months |
-| CKAN | Free | Medium | Medium | Medium (Python, PostgreSQL) | 2-3 months |
-| Collibra Data Intelligence Platform | High | Medium-High | Medium | Medium | 3-6 months |
-| Databricks Unity Catalog | Included with Databricks | Medium | Medium | Medium (Databricks, SQL) | 2-3 months |
-| DataHub | Free | Medium-High | Medium | Medium-High (Java, Python) | 2-5 months |
-| dbt | Free (Core) / Paid (Cloud) | Low-Medium | Low-Medium | Medium (SQL, Python, Git) | 1-3 months |
-| DKAN | Free | Medium | Medium | Medium (Drupal, PHP) | 2-3 months |
-| Great Expectations | Free (Core) / Paid (Cloud) | Low | Low | Medium (Python) | 1-2 months |
-| OpenMetadata | Free | Medium | Medium | Medium (JavaScript, Python) | 2-4 months |
+| OpenMetadata | PS | PS | U | U | PS | [SSO](https://docs.open-metadata.org/latest/deployment/security), [Basic Auth](https://docs.open-metadata.org/latest/deployment/security/basic-auth), [LDAP](https://docs.open-metadata.org/latest/deployment/security/ldap), [SSL](https://docs.open-metadata.org/latest/deployment/security/enable-ssl), [JWT Tokens](https://docs.open-metadata.org/latest/deployment/security/enable-jwt-tokens) | |
 
 ## Notes & References
 
