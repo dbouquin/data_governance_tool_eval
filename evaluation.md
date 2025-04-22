@@ -76,8 +76,8 @@ For each capability, consider using a standardized rating system:
 
 | Tool Name | Pre-Built Connectors | Automation Capabilities | CI/CD Integration | SDK Availability | API Documentation |
 |-----------|----------------------|-------------------------|-------------------|------------------|-------------------|
-| Apache Atlas |  |  | | | |
-| AWS | | | | | |
+| Apache Atlas | [PS](https://atlan.com/what-is-apache-atlas/#apache-atlas-architecture) (APIs and Kafka) | [FS](https://cwiki.apache.org/confluence/display/ATLAS/Atlas+Bridges+and+Hooks) | | NS | [PS](https://atlas.apache.org/api/v2/ui/index.html) (release notes with [downloads](https://atlas.apache.org/2.0.0/Downloads.html)) |
+| AWS | [FS](https://docs.aws.amazon.com/athena/latest/ug/connectors-available.html) | [FS](https://docs.aws.amazon.com/glue/latest/dg/automating-awsglue-with-cloudwatch-events.html) | | [FS](https://docs.aws.amazon.com/glue/latest/dg/service_code_examples.html) | [FS](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api.html) |
 | CKAN | [FS](https://extensions.ckan.org/) |  |  | [FS](https://github.com/ckan/awesome-ckan) | [FS](https://docs.ckan.org/en/2.11/api/index.html) |
 | Collibra | | | | | |
 | Databricks | | | | | |
