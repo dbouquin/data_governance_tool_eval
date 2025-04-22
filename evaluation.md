@@ -15,6 +15,31 @@
 | Oracle - Native | | | | | | |
 | [OpenMetadata](https://open-metadata.org/) | [1.7.0 (Apr 2025)](https://github.com/open-metadata/OpenMetadata/releases/tag/1.7.0-release) | Apache License 2.0 | Self-Hosted/Cloud (Collate SaaS) | Unified Metadata Platform for Discovery, Governance & Observability | High (Active development since 2021) | Limited information available |
 
+## Tool Evaluation Summary
+
+| Tool Name | Overall Score (1-10) | Best For | Not Recommended For | Final Recommendation |
+|-----------|----------------------|----------|---------------------|----------------------|
+| Apache Atlas | | | | |
+| AWS | | | | |
+| CKAN | | | | |
+| Collibra | | | |
+| Databricks | | | | |
+| DataHub | | | | |
+| dbt | | | | |
+| Great Expectations | | | | |
+| Oracle - Native | | | | |
+| OpenMetadata | | | | |
+
+## Evaluation Ratings Legend
+
+For each capability, consider using a standardized rating system:
+- **Full Support (FS)**: Feature is fully implemented and robust
+- **Partial Support (PS)**: Feature exists but may have limitations
+- **Limited Support (LS)**: Basic implementation with significant limitations
+- **Planned (P)**: On the roadmap but not yet implemented
+- **Not Supported (NS)**: Not currently available or supported
+- **Unknown (U)**: Information not available
+
 ## Core Capabilities
 
 | Tool Name | Data Catalog | Metadata Management | Data Lineage | Audit Trail Logs | Data Quality Testing | Role-Based Access Control | Data Classification |
@@ -104,28 +129,3 @@
 | Great Expectations | | | | [Documentation](https://docs.greatexpectations.io/) | [GitHub](https://github.com/great-expectations/great_expectations) | 
 | Oracle - Native | | | | | | |
 | OpenMetadata | | | | [Documentation](https://docs.open-metadata.org/) | [GitHub](https://github.com/open-metadata/OpenMetadata) | 
-
-## Evaluation Ratings Legend
-
-For each capability, consider using a standardized rating system:
-- **Full Support (FS)**: Feature is fully implemented and robust
-- **Partial Support (PS)**: Feature exists but may have limitations
-- **Limited Support (LS)**: Basic implementation with significant limitations
-- **Planned (P)**: On the roadmap but not yet implemented
-- **Not Supported (NS)**: Not currently available or supported
-- **Unknown (U)**: Information not available
-
-## Tool Evaluation Summary
-
-| Tool Name | Overall Score (1-10) | Best For | Not Recommended For | Final Recommendation |
-|-----------|----------------------|----------|---------------------|----------------------|
-| Apache Atlas | | | | |
-| AWS | | | | |
-| CKAN | | | | |
-| Collibra | | | |
-| Databricks | | | | |
-| DataHub | | | | |
-| dbt | | | | |
-| Great Expectations | | | | |
-| Oracle - Native | | | | |
-| OpenMetadata | | | | |
