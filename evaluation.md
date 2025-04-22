@@ -30,7 +30,9 @@
 | Oracle - Native | | | | |
 | OpenMetadata | | | | |
 
-## Evaluation Ratings Legend
+## Full Evaluation
+
+### Evaluation Ratings Legend
 
 For each capability, consider using a standardized rating system:
 - **Full Support (FS)**: Feature is fully implemented and robust
@@ -40,7 +42,7 @@ For each capability, consider using a standardized rating system:
 - **Not Supported (NS)**: Not currently available or supported
 - **Unknown (U)**: Information not available
 
-## Core Capabilities
+### Core Capabilities
 
 | Tool Name | Data Catalog | Metadata Management | Data Lineage | Audit Trail Logs | Data Quality Testing | Role-Based Access Control | Data Classification |
 |-----------|--------------|---------------------|--------------|------------------|---------------------|---------------------------|---------------------|
@@ -55,7 +57,7 @@ For each capability, consider using a standardized rating system:
 | Oracle - Native | | | | | | | |
 | OpenMetadata | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-discovery) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-discovery/details) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-lineage) | [FS](https://docs.open-metadata.org/latest/connectors/ingestion/versioning/change-feeds) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-quality-observability) | [FS](https://docs.open-metadata.org/latest/how-to-guides/admin-guide/teams-and-users) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-governance/classification) |
 
-## Query & Analytics Capabilities
+### Query & Analytics Capabilities
 
 | Tool Name | Query Engine | Federated Query | Anomaly Detection | Handles Structured Data | Handles Unstructured Data |
 |-----------|--------------|-----------------|-------------------|-------------------------|---------------------------|
@@ -70,7 +72,7 @@ For each capability, consider using a standardized rating system:
 | Oracle - Native | | | | | |
 | OpenMetadata | | | | | |
 
-## Integration & Development
+### Integration & Development
 
 | Tool Name | Pre-Built Connectors | Automation Capabilities | CI/CD Integration | SDK Availability | API Documentation |
 |-----------|----------------------|-------------------------|-------------------|------------------|-------------------|
@@ -85,7 +87,7 @@ For each capability, consider using a standardized rating system:
 | Oracle - Native | | | | | |
 | OpenMetadata | | | | | |
 
-## Infrastructure & Resources
+### Infrastructure & Resources
 
 | Tool Name | Data Storage Options | Scalability | Performance | On-Prem Support | Cloud Support |
 |-----------|----------------------|-------------|------------|-----------------|---------------|
@@ -100,7 +102,7 @@ For each capability, consider using a standardized rating system:
 | Oracle - Native | | | | | |
 | OpenMetadata | MySQL/PostgreSQL, Elasticsearch/OpenSearch | FS | FS | FS | FS |
 
-## Compliance & Security
+### Compliance & Security
 
 | Tool Name | GDPR Compliance | HIPAA Compliance | Security Compliance | FedRAMP Status | Data Encryption | Authentication Methods | Notes |
 |-----------|-----------------|------------------|------------------|----------------|-----------------|------------------------|-----------------|
@@ -115,7 +117,7 @@ For each capability, consider using a standardized rating system:
 | Oracle - Native | | | | | | | |
 | OpenMetadata | PS | PS | U | U | PS | [SSO](https://docs.open-metadata.org/latest/deployment/security), [Basic Auth](https://docs.open-metadata.org/latest/deployment/security/basic-auth), [LDAP](https://docs.open-metadata.org/latest/deployment/security/ldap), [SSL](https://docs.open-metadata.org/latest/deployment/security/enable-ssl), [JWT Tokens](https://docs.open-metadata.org/latest/deployment/security/enable-jwt-tokens) | |
 
-## Notes & References
+### Notes & References
 
 | Tool Name | Key Strengths | Key Limitations | Notable Use Cases | Documentation Link | Community/Forum Link |
 |-----------|---------------|-----------------|-------------------|-------------------|---------------------|
