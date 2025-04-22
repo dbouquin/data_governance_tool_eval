@@ -61,16 +61,16 @@ For each capability, consider using a standardized rating system:
 
 | Tool Name | Query Engine | Federated Query | Anomaly Detection | Handles Structured Data | Handles Unstructured Data |
 |-----------|--------------|-----------------|-------------------|-------------------------|---------------------------|
-| Apache Atlas | [FS](https://atlas.apache.org/2.0.0/Search-Advanced.html) | [LS](https://www.mongodb.com/docs/atlas/data-federation/overview/) | NS | FS | FS | 
+| Apache Atlas | [FS](https://atlas.apache.org/2.0.0/Search-Advanced.html) (DSL) | [LS](https://www.mongodb.com/docs/atlas/data-federation/overview/) (available for MongoDB) | NS | FS | FS | 
 | AWS | [FS](https://aws.amazon.com/athena/) | [FS](https://docs.aws.amazon.com/athena/latest/ug/federated-queries.html) | [FS](https://docs.aws.amazon.com/glue/latest/dg/data-quality-anomaly-detection.html) | FS | [FS](https://aws.amazon.com/blogs/big-data/unstructured-data-management-and-governance-using-aws-ai-ml-and-analytics-services/) | 
-| CKAN | [PS](https://github.com/ckan/ckan/issues/7551) | [FS](https://ckan.org/features/federate) | NS | FS | FS |
+| CKAN | [FS](https://docs.ckan.org/en/2.9/maintaining/datastore.html) (PostgreSQL; [open issue](https://github.com/ckan/ckan/issues/7551) on other SQL engines | [FS](https://ckan.org/features/federate) | NS | FS | FS |
 | Collibra | [FS](https://www.collibra.com/products/core-services/data-notebook) | [FS](https://www.collibra.com/products/core-services) | [FS](https://www.collibra.com/products/data-quality-and-observability#sub-menu-features) | FS | [PS](https://marketplace.collibra.com/listings/data-x-ray-for-collibra-unstructured-data-intelligence/) |
 | Databricks | [FS](https://www.databricks.com/product/photon) | [FS](https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-federated-queries) | [FS](https://www.databricks.com/blog/near-real-time-anomaly-detection-delta-live-tables-and-databricks-machine-learning) | FS | [FS](https://www.databricks.com/resources/webinar/hassle-free-data-ingestion-part-3) | 
-| DataHub | | | | | | |
-| dbt | | | | | | |
-| Great Expectations | | | | | |
+| DataHub | [NS](https://datahubproject.io/docs/api/graphql/overview/) (uses GraphQL API instead) | [FS](https://datahubproject.io/docs/architecture/architecture/) | [FS](https://datahubproject.io/cloud/) (Cloud)| FS | PS |
+| dbt | NS (relies on query engine of underlying database) | NS | NS | FS | LS |
+| Great Expectations | NS | NS | [LS](https://qxf2.com/blog/outlier-detection-algorithms-using-great-expectations/) | FS | LS |
 | Oracle - Native | | | | | |
-| OpenMetadata | | | | | |
+| OpenMetadata | [PS](https://atlan.com/open-source-data-catalog-tools/) (uses integration with Elasticsearch and PostgreSQL) | [PS](https://github.com/open-metadata/OpenMetadata) (uses a central metadata repository) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-quality-observability/anomaly-detection) | FS | [FS](https://docs.open-metadata.org/latest/connectors/storage) |
 
 ### Integration & Development
 
@@ -89,18 +89,18 @@ For each capability, consider using a standardized rating system:
 
 ### Infrastructure & Resources
 
-| Tool Name | Data Storage Options | Scalability | Performance | On-Prem Support | Cloud Support |
-|-----------|----------------------|-------------|------------|-----------------|---------------|
-| Apache Atlas | HBase (JanusGraph 1.0.0) | FS | PS | FS | PS |
-| AWS | S3/Various AWS Services | FS | FS | NS | FS |
-| CKAN | [Datastore](https://ckan.org/features/datastore) | PS | PS | FS | PS |
-| Collibra | Multiple options | FS | FS | FS | FS |
-| Databricks | Delta Lake/Various Cloud Storage | FS | FS | PS | FS |
-| DataHub | MySQL/Elasticsearch/Neo4j | FS | FS | FS | FS |
-| dbt | Works with existing data warehouse  | FS | FS | FS | FS |
-| Great Expectations | No storage (validates in-place) | FS | PS | FS | FS |
-| Oracle - Native | | | | | |
-| OpenMetadata | MySQL/PostgreSQL, Elasticsearch/OpenSearch | FS | FS | FS | FS |
+| Tool Name | Data Storage Options | On-Prem Support | Cloud Support |
+|-----------|----------------------|-------------|------------|
+| Apache Atlas | HBase (JanusGraph 1.0.0) |  |  |
+| AWS | S3/Various AWS Services |  |  |
+| CKAN | [Datastore](https://ckan.org/features/datastore) |  |  |
+| Collibra | Multiple options |  |  |
+| Databricks | Delta Lake/Various Cloud Storage |  |  |
+| DataHub | MySQL/Elasticsearch/Neo4j |  |  |
+| dbt | Works with existing data warehouse  |  |  |
+| Great Expectations | No storage (validates in-place) |  |  |
+| Oracle - Native | | | |
+| OpenMetadata | MySQL/PostgreSQL, Elasticsearch/OpenSearch |  |  |
 
 ### Compliance & Security
 
