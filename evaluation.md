@@ -11,7 +11,6 @@
 | [Databricks Unity Catalog](https://www.databricks.com/product/unity-catalog) | [Continuously updated](https://www.databricks.com/product/unity-catalog) | [Databricks Terms](https://www.databricks.com/legal/terms-of-use) (commercial with open source components) | Cloud/Self-Hosted | Unified Data & AI Asset Governance | High (Integrated with Databricks Lakehouse Platform) | [US Postal Service, Dept. of the Air Force, Office of the Inspector General, Others](https://www.databricks.com/solutions/industries/public-sector) |
 | [DataHub](https://datahubproject.io/) | [1.0.0 (March 2025)](https://datahubproject.io/docs/releases/) | Apache License 2.0 | Self-Hosted/Cloud | Data & AI Metadata Platform for Discovery, Observability & Governance | High (Actively maintained by [LinkedIn, Acryl Data](https://www.acryldata.io/press/founded-by-airbnb-and-linkedin-data-veterans-acryl-data-re-imagines-metadata-management-with-dollar9-million-in-seed-funding)) | Limited information available |
 | [dbt](https://www.getdbt.com/) | [Core 1.10.0b2 (Apr 2025)](https://github.com/dbt-labs/dbt-core/releases), [Cloud (Apr 2025)](https://docs.getdbt.com/docs/dbt-versions/dbt-cloud-release-notes) | Apache License 2.0 | Self-Hosted/Cloud | Data Transformation, Testing, Documentation & Metrics Management | High (Widely adopted, active development) | Limited information available |
-| [DKAN](https://getdkan.org/) (Drupal-based open data portal based on CKAN) | [2.20.5 (Apr 2025)](https://github.com/GetDKAN/dkan/releases/tag/2.20.5) | GNU General Public License 2.0 | Self-Hosted | Drupal-based Open Data Platform | High (Recognized as a [Digital Public Good](https://www.digitalpublicgoods.net/r/dkan)) | Used by various government agencies for open data portals |
 | [Great Expectations](https://greatexpectations.io/) | [1.4.0 (Apr 2025)](https://github.com/great-expectations/great_expectations/releases/tag/1.4.0) | Apache License 2.0 | Self-Hosted/Cloud | Data Quality Testing, Validation & Observability | High (Widely adopted, active development) | Limited information available |
 | Oracle - Native | | | | | | |
 | [OpenMetadata](https://open-metadata.org/) | [1.7.0 (Apr 2025)](https://github.com/open-metadata/OpenMetadata/releases/tag/1.7.0-release) | Apache License 2.0 | Self-Hosted/Cloud (Collate SaaS) | Unified Metadata Platform for Discovery, Governance & Observability | High (Active development since 2021) | Limited information available |
@@ -21,13 +20,12 @@
 | Tool Name | Data Catalog | Metadata Management | Data Lineage | Audit Trail Logs | Data Quality Testing | Role-Based Access Control | Data Classification |
 |-----------|--------------|---------------------|--------------|------------------|---------------------|---------------------------|---------------------|
 | Apache Atlas | FS | FS | FS | [FS](https://www.clearpeaks.com/data-governance-with-apache-atlas-introduction-to-atlas/) | LS | FS | [FS](https://atlas.apache.org/1.2.0/ClassificationPropagation.html) |
-| AWS Lake Formation/Glue | FS | FS | [FS](https://aws.amazon.com/blogs/aws/introducing-end-to-end-data-lineage-preview-visualization-in-amazon-datazone/) | FS | FS | FS | FS |
-| CKAN | FS | PS | [LS](https://github.com/ahussein/ckanext-datalineage) | [LS](https://github.com/ckan/ckan/issues/3998) | [PS](https://ckan.org/blog/introducing-ckanext-validation-data-validation-and-reporting-integrated-in-ckan) | FS | LS |
+| AWS Lake Formation/Glue | FS | FS | [FS](https://aws.amazon.com/blogs/aws/introducing-end-to-end-data-lineage-preview-visualization-in-amazon-datazone/) | [FS](https://docs.aws.amazon.com/lake-formation/latest/dg/security-event-logging.html) | [FS](https://aws.amazon.com/glue/features/data-quality/) | [FS](https://docs.aws.amazon.com/lake-formation/latest/dg/lf-permissions-overview.html) | FS ([classifiers](https://docs.aws.amazon.com/glue/latest/dg/add-classifier.html) + separate [PII detection](https://docs.aws.amazon.com/glue/latest/dg/detect-PII.html)) |
+| CKAN | FS | [PS](https://github.com/ckan/ckanext-scheming) | [LS](https://github.com/ahussein/ckanext-datalineage) | [LS](https://github.com/ckan/ckan/issues/3998) | [PS](https://ckan.org/blog/introducing-ckanext-validation-data-validation-and-reporting-integrated-in-ckan) | FS | LS |
 | Collibra Data Intelligence Platform | FS | FS | [FS](https://www.collibra.com/products/data-lineage#sub-menu-features) | [FS](https://productresources.collibra.com/docs/collibra/latest/Content/Architecture/co_audit-logging.htm) | [FS](https://www.collibra.com/products/data-quality-and-observability) | [FS](https://www.collibra.com/products/data-quality-and-observability) | [FS](https://productresources.collibra.com/docs/collibra/latest//Content/Catalog/DataClassification/co_about-data-classification.htm) |
-| Databricks Unity Catalog | FS | FS | FS | FS | PS | FS | FS |
-| DataHub | FS | FS | FS | FS | FS | FS | FS |
-| dbt | PS | FS | FS | FS | FS | FS | PS |
-| DKAN | FS | PS | LS | PS | LS | FS | LS |
+| Databricks Unity Catalog | [FS](https://docs.databricks.com/aws/en/data-governance/unity-catalog/) | FS | [FS](https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage) | [FS](https://docs.databricks.com/aws/en/data-governance/unity-catalog/audit) | [FS](https://www.databricks.com/discover/pages/data-quality-management) | [FS](https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges) | [PS](https://docs.databricks.com/aws/en/lakehouse-monitoring/data-classification) |
+| DataHub | [FS](https://datahubproject.io/docs/features/) | [FS](https://datahubproject.io/docs/features/) | [FS](https://datahubproject.io/docs/api/tutorials/lineage/) | [FS](https://datahubproject.io/docs/what/mxe/) | [FS](https://datahubproject.io/docs/assertions/open-assertions-spec/) | [PS](https://datahubproject.io/docs/authorization/roles) (custom roles planned) | [FS](https://medium.com/datahub-project/pii-classification-just-got-easier-with-datahub-6bab2b63abcb) |
+| dbt | [PS](https://www.getdbt.com/product/integrations) | [PS](https://atlan.com/dbt-metadata-management/) | [FS](https://docs.getdbt.com/docs/collaborate/explore-projects#example-of-full-lineage-graph) | [FS](https://docs.getdbt.com/docs/cloud/manage-access/audit-log) (Enterprise) | [FS](https://www.getdbt.com/blog/building-a-data-quality-framework-with-dbt-and-dbt-cloud) | [FS](https://docs.getdbt.com/docs/cloud/manage-access/about-user-access) | [PS](https://www.getdbt.com/blog/critical-tools-data-governance) |
 | Great Expectations | NS | PS | NS | FS | FS | FS | LS |
 | Oracle - Native | | | | | | | |
 | OpenMetadata | FS | FS | FS | FS | FS | FS | FS |
@@ -43,7 +41,6 @@
 | Databricks Unity Catalog | FS | FS | FS | FS | FS | FS |
 | DataHub | PS | PS | FS | FS | PS | FS |
 | dbt | FS | PS | PS | FS | PS | FS |
-| DKAN | LS | LS | NS | FS | PS | FS |
 | Great Expectations | PS | NS | FS | FS | LS | LS |
 | Oracle - Native | | | | | | |
 | OpenMetadata | | | | | | |
@@ -59,7 +56,6 @@
 | Databricks Unity Catalog | FS (90+) | FS | FS | FS | FS | FS |
 | DataHub | FS (50+) | FS | PS | FS | FS (GraphQL & REST) | FS |
 | dbt | FS | FS | FS | FS | FS | FS |
-| DKAN | PS | PS | PS | FS | FS | FS |
 | Great Expectations | FS | FS | FS | FS | FS | FS |
 | Oracle - Native | | | | | | |
 | OpenMetadata | FS (90+) | FS | PS | FS | FS | FS |
@@ -75,7 +71,6 @@
 | Databricks Unity Catalog | Delta Lake/Various Cloud Storage | Medium-High | FS | FS | PS | FS |
 | DataHub | MySQL/Elasticsearch/Neo4j | Medium-High | FS | FS | FS | FS |
 | dbt | Works with existing data warehouse | Low | FS | FS | FS | FS |
-| DKAN | Drupal/PostgreSQL | Low-Medium | PS | PS | FS | PS |
 | Great Expectations | No storage (validates in-place) | Low | FS | PS | FS | FS |
 | Oracle - Native | | | | | | |
 | OpenMetadata | MySQL/PostgreSQL, Elasticsearch/OpenSearch | Low-Medium | FS | FS | FS | FS |
@@ -91,7 +86,6 @@
 | Databricks Unity Catalog | [FS](https://www.databricks.com/trust/compliance/gdpr) | [FS](https://docs.databricks.com/aws/en/security/privacy/hipaa) | [Security compliances listed](https://www.databricks.com/trust/compliance/iso-27001) | [Integrates with High and Moderate supported clouds (AWS and Azure)](https://www.databricks.com/trust/compliance/fedramp) | FS | [SSO, OAuth](https://docs.databricks.com/aws/en/security/auth) | |
 | DataHub | LS | LS | U  | U | U | [SSO, JaaS, Basic Auth, Access Tokens](https://datahubproject.io/docs/authentication) | Not explicitly compliant but can be used to achieve compliance with GDPR, HIPAA, ISO 27001 |
 | dbt | FS | FS | [Security compliances listed](https://www.getdbt.com/security) | U | FS | [SSO and OAuth](https://docs.getdbt.com/docs/cloud/manage-access/sso-overview), [Authentication Tokens](https://docs.getdbt.com/docs/dbt-cloud-apis/authentication) | |
-| DKAN | LS | LS | U | U | NS | [Basic Auth](https://dkan.readthedocs.io/en/7.x-1.x/admin/account_access_and_setup.html), [Access Tokens](https://dkan.readthedocs.io/en/7.x-1.x/apis/rest-api.html) | Not explicitly compliant but can be used to achieve compliance with GDPR, HIPAA, ISO 27001 |
 | Great Expectations | U | U | [SOC 2 Type II](https://trust.greatexpectations.io/) | U | FS | [SSH, Basic Auth](https://trust.greatexpectations.io/controls#infrastructure-security), [SSO (Enterprise), Access Tokens](https://docs.greatexpectations.io/docs/cloud/users/manage_users)| |
 | Oracle - Native | | | | | | | |
 | OpenMetadata | PS | PS | U | U | PS | [SSO](https://docs.open-metadata.org/latest/deployment/security), [Basic Auth](https://docs.open-metadata.org/latest/deployment/security/basic-auth), [LDAP](https://docs.open-metadata.org/latest/deployment/security/ldap), [SSL](https://docs.open-metadata.org/latest/deployment/security/enable-ssl), [JWT Tokens](https://docs.open-metadata.org/latest/deployment/security/enable-jwt-tokens) | |
@@ -107,7 +101,6 @@
 | Databricks Unity Catalog | Unified governance for data and AI assets, Strong lineage tracking, Native integration with Databricks platform, Column/row-level access control, Comprehensive audit logging | Primarily designed for Databricks ecosystem, Higher cost as part of Databricks platform, Limited open source components | Unified data and AI governance, ML model tracking, Cross-cloud data governance, Data mesh implementations | [Documentation](https://www.databricks.com/product/unity-catalog) | [Databricks Community](https://community.databricks.com/) | April 2025 |
 | DataHub | Unified data & AI metadata support, Enterprise scale, Advanced lineage capabilities, Intuitive platform-based navigation, End-to-end ML model tracking | Complex architecture, Requires more resources than some alternatives | Enterprise data cataloging, AI/ML asset governance, Model lineage tracking, Iceberg table management | [Documentation](https://datahubproject.io/docs/) | [GitHub](https://github.com/datahub-project/datahub) | April 2025 |
 | dbt | Excellent data testing, Documentation generation, SQL/Python transformations, Semantic layer for metrics, Microbatch incremental models, Strong collaboration features | Not a complete governance solution, Requires integration with other tools | Data transformation workflows, SQL/Python transformations, Metrics standardization, Data documentation, Centralized metrics management | [Documentation](https://docs.getdbt.com/) | [GitHub](https://github.com/dbt-labs/dbt-core) | April 2025 |
-| DKAN | Drupal integration, Customizable interface, Strong publishing workflows, OpenAPI support, Established government use | Limited data governance features, Drupal dependency, Smaller ecosystem than CKAN | Open data portals, Government data publishing, Drupal-based websites with data needs | [Documentation](https://dkan.readthedocs.io/) | [GitHub](https://github.com/GetDKAN/dkan) | April 2025 |
 | Great Expectations | Excellent data validation, Flexible expectations framework, Python-based, AI-recommended expectations, Comprehensive integration ecosystem, SaaS deployment option with GX Cloud | Not a complete metadata solution, Focus only on data quality | Data quality validation, Pipeline testing, Automated data profiling, Continuous validation monitoring | [Documentation](https://docs.greatexpectations.io/) | [GitHub](https://github.com/great-expectations/great_expectations) | April 2025 |
 | Oracle - Native | | | | | | |
 | OpenMetadata | Modern architecture, 90+ connectors, Streamlined 4-component structure, Robust data quality capabilities, Auto-classification workflows, ER diagrams for visualizing table connections | Newer platform compared to some alternatives | Cross-system metadata management, Data discovery, Data observability, Data governance, Data quality management | [Documentation](https://docs.open-metadata.org/) | [GitHub](https://github.com/open-metadata/OpenMetadata) | April 2025 |
@@ -133,7 +126,6 @@ For each capability, consider using a standardized rating system:
 | Databricks Unity Catalog | 8 | Organizations using Databricks, Unified governance of data and AI assets, Multi-cloud deployments | Organizations not using Databricks, Budget-constrained deployments | Best for agencies already using or planning to use Databricks as their analytics platform |
 | DataHub | 8.5 | Organizations with complex data ecosystems that include both traditional data assets and AI/ML workloads | Small teams with limited resources or technical expertise | Strong candidate for larger agencies with complex data ecosystems, especially those involved in AI/ML initiatives |
 | dbt | 7.5 | Data transformation workflows, Data testing, Pipeline documentation, Centralized metrics management | Complete data governance solution, Data discovery without additional tools | Good complementary tool to pair with a dedicated data catalog/governance platform, excellent for standardizing metrics definitions across tools |
-| DKAN | 5.5 | Drupal-based organizations, Simple open data portals, Government data publishing | Enterprise data governance, Advanced governance features, Sensitive data handling | Suitable only if ACF has existing Drupal infrastructure and needs primarily for public data sharing |
 | Great Expectations | 7.5 | Data quality validation, Automated data testing, Schema enforcement, Continuous data monitoring | Full data governance, Metadata management | Excellent complementary tool focused on data quality that integrates well with broader data platforms; superior choice for automated testing with AI assistance |
 | Oracle - Native | | | | |
 | OpenMetadata | 8.5 | Organizations seeking a unified metadata platform with strong governance capabilities and extensive connector support | Organizations with limited technical resources requiring minimal setup | Strong candidate for agencies seeking a modern, well-supported solution with broad connector support and comprehensive governance features |
