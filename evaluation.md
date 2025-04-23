@@ -12,7 +12,7 @@
 | [DataHub](https://datahubproject.io/) | [1.0.0 (March 2025)](https://datahubproject.io/docs/releases/) | Apache License 2.0 | Self-Hosted/Cloud | High (Actively maintained by [LinkedIn, Acryl Data](https://www.acryldata.io/press/founded-by-airbnb-and-linkedin-data-veterans-acryl-data-re-imagines-metadata-management-with-dollar9-million-in-seed-funding)) | Limited information available |
 | [dbt](https://www.getdbt.com/) | [Core 1.10.0b2 (Apr 2025)](https://github.com/dbt-labs/dbt-core/releases), [Cloud (Apr 2025)](https://docs.getdbt.com/docs/dbt-versions/dbt-cloud-release-notes) | Apache License 2.0 | Self-Hosted/Cloud | High (Widely adopted, active development) | Limited information available |
 | [Great Expectations](https://greatexpectations.io/) | [1.4.0 (Apr 2025)](https://github.com/great-expectations/great_expectations/releases/tag/1.4.0) | Apache License 2.0 | Self-Hosted/Cloud | High (Active development since 2017) | Limited information available |
-| Oracle - Native | | | | | |
+| Oracle | | | | | |
 | [OpenMetadata](https://open-metadata.org/) | [1.7.0 (Apr 2025)](https://github.com/open-metadata/OpenMetadata/releases/tag/1.7.0-release) | Apache License 2.0 | Self-Hosted/Cloud (Collate SaaS) | High (Active development since 2021) | Limited information available |
 
 ## Tool Evaluation Summary
@@ -27,7 +27,7 @@
 | DataHub | | | | |
 | dbt | | | | |
 | Great Expectations | | | | |
-| Oracle - Native | | | | |
+| Oracle | | | | |
 | OpenMetadata | | | | |
 
 ## Full Evaluation
@@ -54,7 +54,7 @@ For each capability, consider using a standardized rating system:
 | DataHub | [FS](https://datahubproject.io/docs/features/) | [FS](https://datahubproject.io/docs/features/) | [FS](https://datahubproject.io/docs/api/tutorials/lineage/) | [FS](https://datahubproject.io/docs/what/mxe/) | [FS](https://datahubproject.io/docs/assertions/open-assertions-spec/) | [PS](https://datahubproject.io/docs/authorization/roles) (custom roles planned) | [FS](https://medium.com/datahub-project/pii-classification-just-got-easier-with-datahub-6bab2b63abcb) |
 | dbt | [PS](https://www.getdbt.com/product/integrations) | [PS](https://atlan.com/dbt-metadata-management/) | [FS](https://docs.getdbt.com/docs/collaborate/explore-projects#example-of-full-lineage-graph) | [FS](https://docs.getdbt.com/docs/cloud/manage-access/audit-log) (Enterprise) | [FS](https://www.getdbt.com/blog/building-a-data-quality-framework-with-dbt-and-dbt-cloud) | [FS](https://docs.getdbt.com/docs/cloud/manage-access/about-user-access) | [PS](https://www.getdbt.com/blog/critical-tools-data-governance) |
 | Great Expectations | [NS](https://greatexpectations.io/blog/data-catalogs-and-data-quality-using-great-expectations-with-data-catalog/) (requires integration with a data catalog) | PS | [NS](https://openlineage.io/docs/integrations/great-expectations/)(requires integration with OpenLineage) | NS (relies on integrations) | [FS](https://greatexpectations.io/expectations/) | [PS](https://docs.greatexpectations.io/docs/cloud/users/manage_users) | PS |
-| Oracle - Native | | | | | | | |
+| Oracle | [FS](https://www.oracle.com/big-data/data-catalog/) | [FS](https://www.oracle.com/middleware/technologies/enterprise-metadata-management.html) | [FS](https://docs.oracle.com/en-us/iaas/data-catalog/using/view-data-lineage-dis.htm) | [FS](https://docs.oracle.com/cd/E19944-01/819-4483/audit_log_reference.html) | [FS](https://www.oracle.com/middleware/technologies/enterprise-data-quality.html) | [FS](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/managing-fine-grained-access-in-pl-sql-packages-and-types.html) | [PS](https://docs.oracle.com/en-us/iaas/data-science/using/operators-pii.htm) |
 | OpenMetadata | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-discovery) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-discovery/details) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-lineage) | [FS](https://docs.open-metadata.org/latest/connectors/ingestion/versioning/change-feeds) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-quality-observability) | [FS](https://docs.open-metadata.org/latest/how-to-guides/admin-guide/teams-and-users) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-governance/classification) |
 
 ### Query & Analytics Capabilities
@@ -69,38 +69,23 @@ For each capability, consider using a standardized rating system:
 | DataHub | [NS](https://datahubproject.io/docs/api/graphql/overview/) (uses GraphQL API instead) | [FS](https://datahubproject.io/docs/architecture/architecture/) | [FS](https://datahubproject.io/cloud/) (Cloud)| FS | PS |
 | dbt | NS (relies on query engine of underlying database) | NS | NS | FS | LS |
 | Great Expectations | NS | NS | [LS](https://qxf2.com/blog/outlier-detection-algorithms-using-great-expectations/) | FS | LS |
-| Oracle - Native | | | | | |
+| Oracle | [FS](https://docs.oracle.com/cd/E92951_01/coherence/java-reference/com/tangosol/coherence/rest/query/QueryEngine.html) | NS | [FS](https://docs.oracle.com/en-us/iaas/Content/anomaly/using/overview.htm#overview) | FS | [FS](https://docs.oracle.com/en/database/oracle/oracle-database/21/addci/working-with-multimedia-data-types.html) |
 | OpenMetadata | [PS](https://atlan.com/open-source-data-catalog-tools/) (uses integration with Elasticsearch and PostgreSQL) | [PS](https://github.com/open-metadata/OpenMetadata) (uses a central metadata repository) | [FS](https://docs.open-metadata.org/latest/how-to-guides/data-quality-observability/anomaly-detection) | FS | [FS](https://docs.open-metadata.org/latest/connectors/storage) |
 
 ### Integration & Development
 
-| Tool Name | Pre-Built Connectors | Automation Capabilities | CI/CD Integration | SDK Availability | API Documentation |
-|-----------|----------------------|-------------------------|-------------------|------------------|-------------------|
-| Apache Atlas | [PS](https://atlan.com/what-is-apache-atlas/#apache-atlas-architecture) (APIs and Kafka) | [FS](https://cwiki.apache.org/confluence/display/ATLAS/Atlas+Bridges+and+Hooks) | | NS | [PS](https://atlas.apache.org/api/v2/ui/index.html) (release notes with [downloads](https://atlas.apache.org/2.0.0/Downloads.html)) |
-| AWS | [FS](https://docs.aws.amazon.com/athena/latest/ug/connectors-available.html) | [FS](https://docs.aws.amazon.com/glue/latest/dg/automating-awsglue-with-cloudwatch-events.html) | | [FS](https://docs.aws.amazon.com/glue/latest/dg/service_code_examples.html) | [FS](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api.html) |
-| CKAN | [FS](https://extensions.ckan.org/) |  |  | [FS](https://github.com/ckan/awesome-ckan) | [FS](https://docs.ckan.org/en/2.11/api/index.html) |
-| Collibra | | | | | |
-| Databricks | | | | | |
-| DataHub | | | | | |
-| dbt | | | | | |
-| Great Expectations | | | | | |
-| Oracle - Native | | | | | |
-| OpenMetadata | | | | | |
-
-### Infrastructure & Resources
-
-| Tool Name | Data Storage Options | On-Prem Support | Cloud Support |
-|-----------|----------------------|-------------|------------|
-| Apache Atlas | HBase (JanusGraph 1.0.0) |  |  |
-| AWS | S3/Various AWS Services |  |  |
-| CKAN | [Datastore](https://ckan.org/features/datastore) |  |  |
-| Collibra | Multiple options |  |  |
-| Databricks | Delta Lake/Various Cloud Storage |  |  |
-| DataHub | MySQL/Elasticsearch/Neo4j |  |  |
-| dbt | Works with existing data warehouse  |  |  |
-| Great Expectations | No storage (validates in-place) |  |  |
-| Oracle - Native | | | |
-| OpenMetadata | MySQL/PostgreSQL, Elasticsearch/OpenSearch |  |  |
+| Tool Name | Pre-Built Connectors | Automation Capabilities | CI/CD Integration | SDK Availability | API Documentation | Support |
+|-----------|----------------------|-------------------------|-------------------|------------------|-------------------|---------|
+| Apache Atlas | [PS](https://atlan.com/what-is-apache-atlas/#apache-atlas-architecture) (Hadoop hooks and Kafka) | [FS](https://cwiki.apache.org/confluence/display/ATLAS/Atlas+Bridges+and+Hooks) | FS | FS ([Python](https://github.com/wjohnson/pyapacheatlas), [Java](https://blog.knoldus.com/atlas-client/)) | [FS](https://atlas.apache.org/api/v2/ui/index.html) (release notes with [downloads](https://atlas.apache.org/2.0.0/Downloads.html)) | [PS](https://issues.apache.org/jira/projects/ATLAS/issues/ATLAS-4831?filter=allopenissues) |
+| AWS | [FS](https://docs.aws.amazon.com/glue/latest/dg/available-connections.html) | [FS](https://docs.aws.amazon.com/glue/latest/dg/automating-awsglue-with-cloudwatch-events.html) | FS | [FS](https://docs.aws.amazon.com/glue/latest/dg/service_code_examples.html) | [FS](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api.html) | [FS](https://aws.amazon.com/premiumsupport/plans/) |
+| CKAN | [FS](https://extensions.ckan.org/) | FS  | FS | [FS](https://github.com/ckan/awesome-ckan) (Python, Javascript) | [FS](https://docs.ckan.org/en/2.11/api/index.html) |
+| Collibra | [FS](https://www.collibra.com/products/integrations-apis/integrations) | [FS](https://productresources.collibra.com/docs/collibra/latest/Content/CollibraAI/co_CollibraAI.htm) | [FS](https://www.collibra.com/blog/data-observability-embracing-observability-into-dataops) | [FS](https://developer.collibra.com/) | [FS](https://developer.collibra.com/api) |
+| Databricks | [FS](https://docs.databricks.com/aws/en/connect) | FS | [FS](https://docs.databricks.com/aws/en/dev-tools/bundles/) | FS ([Python](https://docs.databricks.com/aws/en/dev-tools/sdk-python), [Java](https://github.com/databricks/databricks-sdk-java), [Go](https://github.com/databricks/databricks-sdk-go), [R](https://docs.databricks.com/aws/en/dev-tools/sdk-r), [Spark](https://docs.databricks.com/aws/en/dev-tools/sdk-english)) | [FS](https://docs.databricks.com/api/workspace/introduction) |
+| DataHub | [FS](https://datahubproject.io/integrations) | [FS](https://datahubproject.io/docs/actions/) | FS | FS ([Python](https://datahubproject.io/docs/metadata-ingestion/as-a-library), [Java](https://datahubproject.io/docs/metadata-integration/java/as-a-library))| [FS](https://datahubproject.io/docs/api/datahub-apis) |
+| dbt | [FS](https://docs.getdbt.com/docs/supported-data-platforms) | [FS](https://docs.getdbt.com/docs/deploy/jobs) | [FS](https://docs.getdbt.com/docs/deploy/continuous-integration#) | [FS](https://docs.getdbt.com/docs/dbt-cloud-apis/sl-python) (Python) | [FS](https://docs.getdbt.com/docs/dbt-cloud-apis/overview) |
+| Great Expectations | [FS](https://docs.greatexpectations.io/docs/core/connect_to_data/) | [FS](https://docs.greatexpectations.io/docs/cloud/validations/manage_validations/) | [FS](https://github.blog/enterprise-software/ci-cd/keeping-your-data-pipelines-healthy-with-the-great-expectations-github-action/) | [FS](https://docs.greatexpectations.io/docs/cloud/connect/connect_lp)(Python) | [PS](https://docs.greatexpectations.io/docs/reference/) |
+| Oracle | [FS](https://www.oracle.com/integration/) (Adaptors) | [FS](https://www.oracle.com/integration/process-automation/) | FS | [FS](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm) | [FS](https://support.oracle.com/signin) |
+| OpenMetadata | [FS](https://docs.open-metadata.org/latest/connectors) | [FS](https://www.restack.io/docs/openmetadata-knowledge-openmetadata-ingestion-guide) | [FS](https://docs.open-metadata.org/latest/connectors/ingestion/deployment) | FS ([Python](https://docs.open-metadata.org/latest/sdk/python), [Java](https://docs.open-metadata.org/latest/sdk/java), [Go](https://docs.open-metadata.org/latest/sdk/go)) | [FS](https://docs.open-metadata.org/swagger.html) |
 
 ### Compliance & Security
 
@@ -114,20 +99,20 @@ For each capability, consider using a standardized rating system:
 | DataHub | LS | LS | U  | U | U | [SSO, JaaS, Basic Auth, Access Tokens](https://datahubproject.io/docs/authentication) | Not explicitly compliant but can be used to achieve compliance with GDPR, HIPAA, ISO 27001 |
 | dbt | FS | FS | [Security compliances listed](https://www.getdbt.com/security) | U | FS | [SSO and OAuth](https://docs.getdbt.com/docs/cloud/manage-access/sso-overview), [Authentication Tokens](https://docs.getdbt.com/docs/dbt-cloud-apis/authentication) | |
 | Great Expectations | U | U | [SOC 2 Type II](https://trust.greatexpectations.io/) | U | FS | [SSH, Basic Auth](https://trust.greatexpectations.io/controls#infrastructure-security), [SSO (Enterprise), Access Tokens](https://docs.greatexpectations.io/docs/cloud/users/manage_users)| |
-| Oracle - Native | | | | | | | |
+| Oracle | [FS](https://www.oracle.com/security/gdpr/) | [FS](https://www.oracle.com/cloud/public-cloud-regions/hipaa/) | [Security compliances listed](https://www.oracle.com/corporate/cloud-compliance/) | [Authorized (High)](https://www.oracle.com/government/govcloud/fedramp-high-jab/) | [FS](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/tdpsg/encrypting-data-with-oracle-transparent-data-encryption.html) | [Oracle IAM](https://docs.oracle.com/en/middleware/idm/index.html)| |
 | OpenMetadata | PS | PS | U | U | PS | [SSO](https://docs.open-metadata.org/latest/deployment/security), [Basic Auth](https://docs.open-metadata.org/latest/deployment/security/basic-auth), [LDAP](https://docs.open-metadata.org/latest/deployment/security/ldap), [SSL](https://docs.open-metadata.org/latest/deployment/security/enable-ssl), [JWT Tokens](https://docs.open-metadata.org/latest/deployment/security/enable-jwt-tokens) | |
 
 ### Notes & References
 
-| Tool Name | Key Strengths | Key Limitations | Notable Use Cases | Documentation Link | Community/Forum Link |
-|-----------|---------------|-----------------|-------------------|-------------------|---------------------|
-| Apache Atlas | | | | [Documentation](https://atlas.apache.org/) | [GitHub](https://github.com/apache/atlas) | 
-| AWS | | | | [Documentation](https://docs.aws.amazon.com/) | [AWS Forums](https://forums.aws.amazon.com/) |
-| CKAN | | | | [Documentation](https://docs.ckan.org/) | [GitHub](https://github.com/ckan/ckan) |
-| Collibra | | | | [Documentation](https://productresources.collibra.com/docs/collibra/latest/Content/Home.htm?utm_source=Bevy&utm_medium=community&utm_campaign=Bevy&utm_content=Documentation/) | [Community Portal](https://community.collibra.com/) | 
-| Databricks | | | | [Documentation](https://www.databricks.com/product/unity-catalog) | [Databricks Community](https://community.databricks.com/) | 
-| DataHub | | | | [Documentation](https://datahubproject.io/docs/) | [GitHub](https://github.com/datahub-project/datahub) | 
-| dbt | | | | [Documentation](https://docs.getdbt.com/) | [GitHub](https://github.com/dbt-labs/dbt-core) | 
-| Great Expectations | | | | [Documentation](https://docs.greatexpectations.io/) | [GitHub](https://github.com/great-expectations/great_expectations) | 
-| Oracle - Native | | | | | | |
-| OpenMetadata | | | | [Documentation](https://docs.open-metadata.org/) | [GitHub](https://github.com/open-metadata/OpenMetadata) | 
+| Tool Name | Key Strengths | Key Limitations |Documentation Link | Community/Forum Link |
+|-----------|---------------|-----------------|-------------------|---------------------|
+| Apache Atlas | | | [Documentation](https://atlas.apache.org/) | [GitHub](https://github.com/apache/atlas) | 
+| AWS | | | [Documentation](https://docs.aws.amazon.com/) | [AWS Forums](https://forums.aws.amazon.com/) |
+| CKAN | | | [Documentation](https://docs.ckan.org/) | [GitHub](https://github.com/ckan/ckan) |
+| Collibra | | | [Documentation](https://productresources.collibra.com/docs/collibra/latest/Content/Home.htm?utm_source=Bevy&utm_medium=community&utm_campaign=Bevy&utm_content=Documentation/) | [Community Portal](https://community.collibra.com/) | 
+| Databricks | | | [Documentation](https://www.databricks.com/product/unity-catalog) | [Databricks Community](https://community.databricks.com/) | 
+| DataHub | | | [Documentation](https://datahubproject.io/docs/) | [GitHub](https://github.com/datahub-project/datahub) | 
+| dbt | | | [Documentation](https://docs.getdbt.com/) | [GitHub](https://github.com/dbt-labs/dbt-core) | 
+| Great Expectations | | | [Documentation](https://docs.greatexpectations.io/) | [GitHub](https://github.com/great-expectations/great_expectations) | 
+| Oracle | | | | | |
+| OpenMetadata | | | [Documentation](https://docs.open-metadata.org/) | [GitHub](https://github.com/open-metadata/OpenMetadata) | 
