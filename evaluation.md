@@ -8,7 +8,7 @@
 | AWS (Lake Formation & Glue Data Catalog) | [Varies by service](https://aws.amazon.com/lake-formation/) | [AWS Service Terms](https://aws.amazon.com/service-terms/) (commercial) | Cloud | High (Continuously updated) | [Several US federal agencies](https://aws.amazon.com/government-education/government/) |
 | [CKAN](https://ckan.org/) | [2.11.2 (Feb 2025)](https://github.com/ckan/ckan/releases/tag/ckan-2.11.2) | GNU Affero General Public License 3.0 | Self-Hosted/Cloud | High (Recognized as a [Digital Public Good](https://ckan.org/blog/CKAN-2023-a-year-of-milestones)) | [data.gov](https://resources.data.gov/categories/data-tools/), [Federal Aviation Administration](https://catalog.data.faa.gov/about), and several other governments worldwide |
 | [Collibra](https://www.collibra.com/products/collibra-platform) | [2025.04 (April 2025)](https://productresources.collibra.com/docs/collibra/latest/Content/ReleaseNotes/ref_release-calendar.htm) | [Master Collibra Agreement](https://www.collibra.com/legal/documents/master-collibra-agreement) (commercial) | Self-Hosted/Cloud | High (Leader in [2025 Gartner Magic Quadrant](https://www.collibra.com/company/newsroom/press-releases/collibra-named-a-leader-in-the-first-ever-gartner-magic-quadrant-for-data-and-analytics)) | [Health Resources and Services Administration](https://orangeslices.ai/contract-award-hrsa-oit-collibra-data-software-catalog/), [Office of the Secretary of Defense](https://www.collibra.com/customer-stories/office-of-the-secretary-of-defense), [Dept. of Veterans Affairs](https://orangeslices.ai/contract-award-va-collibra-enterprise-platform/), [Others](https://www.globenewswire.com/news-release/2020/03/05/1995793/0/en/Collibra-Announces-Customer-Momentum-with-Leading-Federal-Agencies.html) |
-| [Databricks](https://www.databricks.com/product/unity-catalog) | [Continuously updated](https://www.databricks.com/product/unity-catalog) | [Databricks Terms](https://www.databricks.com/legal/terms-of-use) (commercial with open source components) | Cloud/Self-Hosted | High (Integrated with Databricks Lakehouse Platform) | [US Postal Service, Dept. of the Air Force, Office of the Inspector General, Others](https://www.databricks.com/solutions/industries/public-sector) |
+| [Databricks](https://www.databricks.com/product/unity-catalog) | [Continuously updated](https://www.databricks.com/product/unity-catalog) | [Databricks Terms](https://www.databricks.com/legal/terms-of-use) (commercial with open source components) | Cloud | High (Integrated with Databricks Lakehouse Platform) | [US Postal Service, Dept. of the Air Force, Office of the Inspector General, Others](https://www.databricks.com/solutions/industries/public-sector) |
 | [DataHub](https://datahubproject.io/) | [1.0.0 (March 2025)](https://datahubproject.io/docs/releases/) | Apache License 2.0 | Self-Hosted/Cloud | High (Actively maintained by [LinkedIn, Acryl Data](https://www.acryldata.io/press/founded-by-airbnb-and-linkedin-data-veterans-acryl-data-re-imagines-metadata-management-with-dollar9-million-in-seed-funding)) | Limited information available |
 | [dbt](https://www.getdbt.com/) | [Core 1.10.0b2 (Apr 2025)](https://github.com/dbt-labs/dbt-core/releases), [Cloud (Apr 2025)](https://docs.getdbt.com/docs/dbt-versions/dbt-cloud-release-notes) | Apache License 2.0 | Self-Hosted/Cloud | High (Widely adopted, active development) | Limited information available |
 | [Great Expectations](https://greatexpectations.io/) | [1.4.0 (Apr 2025)](https://github.com/great-expectations/great_expectations/releases/tag/1.4.0) | Apache License 2.0 | Self-Hosted/Cloud | High (Active development since 2017) | Limited information available |
@@ -17,18 +17,18 @@
 
 ## Tool Evaluation Summary
 
-| Tool Name | Overall Score (1-10) | Best For | Not Recommended For | Final Recommendation |
-|-----------|----------------------|----------|---------------------|----------------------|
-| Apache Atlas | | | | |
-| AWS | | | | |
-| CKAN | | | | |
-| Collibra | | | |
-| Databricks | | | | |
-| DataHub | | | | |
-| dbt | | | | |
-| Great Expectations | | | | |
-| Oracle | | | | |
-| OpenMetadata | | | | |
+| Tool Name | Overall Score (1-10) | Best For | Not Recommended For | 
+|-----------|----------------------|----------|---------------------|
+| Apache Atlas | | | |
+| AWS | | | |
+| CKAN | | | |
+| Collibra | | |
+| Databricks | | | |
+| DataHub | | | |
+| dbt | | | |
+| Great Expectations | | | |
+| Oracle | | | |
+| OpenMetadata | | | |
 
 ## Full Evaluation
 
