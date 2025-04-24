@@ -1,5 +1,13 @@
 # Data Governance Tools Comparison
 
+## **Summary Recommendation**
+- Collibra - leading commercial option with proven federal experience, if budget allows
+- OpenMetadata - leading Open Source option for modern data environments
+- AWS - strongest cloud-based option if ACF is already invested in AWS infrastructure
+
+For ACF's environment, OpenMetadata's architecture would likely provide adaptability across diverse systems and data types. OpenMetadata's active development community and growing feature set also suggest that it will continue to evolve to meet emerging governance needs. 
+**A hybrid approach combining OpenMetadata as the core platform with specialized tools like Great Expectations ([connector](https://docs.open-metadata.org/v1.6.x/connectors/ingestion/great-expectations)) for data quality could provide an excellent solution that balances comprehensive governance capabilities with flexibility and modern architecture.**
+
 ## Tools Evaluated
 
 |                        | Apache Atlas | AWS<sup>1</sup> | CKAN<sup>2</sup> | Collibra<sup>3</sup> | Databricks | DataHub | dbt<sup>4</sup> | Great Expectations<sup>5</sup> | Oracle<sup>6</sup> | OpenMetadata |
@@ -22,7 +30,7 @@
 
 <sup>6. Oracle is included as the native solution for comparison</sup>
 
-## Summary 
+## Summary Evaluation
 |                        | Apache Atlas | AWS<sup>1</sup> | CKAN<sup>2</sup> | Collibra<sup>3</sup> | Databricks | DataHub | dbt<sup>4</sup> | Great Expectations<sup>5</sup> | Oracle<sup>6</sup> | OpenMetadata |
 |------------------------|--------------|---------------------------|------|----------|------------|---------|-----|-------------------|--------------|--------------|
 | **Overall Classification** | Other Options | Top 3 | Incomplete Offerings | Top 3 | Other Options | Incomplete Offerings | Incomplete Offerings | Incomplete Offerings | Other Options | Top 3 |
